@@ -68,3 +68,9 @@ model.compile(
 
 # Show model structure
 model.summary()
+# Train the model
+history = model.fit(
+    train_ds,
+    validation_data=validation_ds,
+    epochs=15
+)
